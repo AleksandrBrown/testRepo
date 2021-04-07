@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Корзина</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navigation hide_nav">
+    <div class="navigation__container">
+        <div class="navigation__container__menu">
+                <div class="navigation__container__menu__logo"><img src="./assets/img/madlen_logo.svg" alt="menu-logo-icon"></div>
+                <div class="navigation__container__menu__hot-links">
+                    <ul>
+                        <li><a href="#">Спецпредложения</a></li>
+                        <li><a href="#">Новая коллекция</a></li>
+                    </ul>
+                </div>
+                <div class="navigation__container__menu__navigation">
+                    <ul>
+                        <li data-name="Водолазка"><a data-name="Водолазка"href="#">Костюмы</a></li>
+                        <li data-name="Платья"><a href="#">Платья</a></li>
+                        <li data-name="Комбинезоны"><a href="#">Комбинезоны</a></li>
+                        <li data-name="Боди"><a href="#">Боди</a></li>
+                        <li data-name="Топы"><a href="#">Топы </a></li>
+                        <li data-name="Рубашки"><a href="#">Рубашки</a></li>
+                        <li data-name="Брюки"><a href="#">Брюки</a></li>
+                        <li data-name="Юбки"><a href="#">Юбки</a></li>
+                        <li data-name="Верхняя одежда"><a href="#">Верхняя одежда</a></li>
+                        <li data-name="Одежда для дома"><a href="#">Одежда для дома</a></li>
+                        <li data-name="Пляжная одежда"><a href="#">Пляжная одежда</a></li>
+                        <li data-name="Аксессуары"><a href="#">Аксессуары</a></li>
+                        <li data-name="Кардиганы"><a href="#">Кардиганы </a></li>
+                        <li data-name="Маски"><a href="#">Маски</a></li>
+                        <li data-name="Худи"><a href="#">Худи</a></li>
+                    </ul>
+                </div>
+                <div class="navigation__container__menu__submenu">
+                    <ul>
+                        <li><a href="#">Подарочные сертификаты</a></li>
+                        <li><a href="#">О нас</a></li>
+                    </ul>
+                </div>
+                <div class="navigation__container__menu__social-links">
+                    <button><img src="./assets/img/icons/icons8-instagram.svg" alt="instagram-icon"></button>
+                    <button style="margin-left: 10px;"><img src="./assets/img/icons/icons8-facebook.svg" alt="facebook-icon"></button>
+                </div>
+        </div>
+        <div class="navigation__container__btn">
+            <div class="navigation__container__btn__button"><span></span></div>
+            <div class="navigation__container__btn__title">Меню</div>
+        </div>
+    </div>
+</div>
+        <div class="cart-wrapper__container">
+            <header class="header-cart">
+                <div class="header-cart__logo-icon"><a href="./index.html"><img src="./assets/img/madlen_logo.svg" alt="logo-icon"></a></div>
+                <div class="header-cart__subnav-block">
+                    <div class="header-cart__subnav-block_p">Корзина</div>
+                    <button class="header-cart__subnav-block__download-btn"><img src="./assets/img/icons/sf-symbol.svg" alt="down"></button>
+                    <div class="header-cart__subnav-block__close-btn"><a href="./index.html"><span></span></a></div>
+                </div>
+            </header>
+            <div class="cart-container">
+                <div class="cart-container__item-container">
+                    <div class="cart-container__item-container__table-title">
+                        <table>
+                            <tr>
+                                <td>Товар</td>
+                                <td>Описание</td>
+                                <td>Размер</td>
+                                <td>Количество</td>
+                                <td>Цена</td>
+                                <td>Удалить</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="cart-container__item-container__table-content">
+                        <table>
+                            <tr>
+                                <td><img src="./assets/img/item-imgs/8939560-1.svg" alt=""></td>
+                                <td>
+                                    <p>Водолазка</p>
+                                    <p>Белый</p>
+                                    <p>2749127</p>
+                                </td>
+                                <td>M</td>
+                                <td>
+                                    <button>-</button>
+                                    <span>1</span>
+                                    <button>+</button>
+                                </td>
+                                <td>1200 р</td>
+                                <td><span class="cart-del-btn"></span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="cart-container__descr-container">
+                    <div class="cart-container__descr-container__promocode">
+                        <button>ПРОМОКОД <input type="text" class="promocode-input"></button>
+                        <div class="help-link">
+                            <p>
+                                возникли проблемы?<br/>
+                                Напишите нам
+                            </p>
+                            <a href="mailto:example@gmail.com">example@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="cart-container__descr-container__value">
+                        <p class="cart-container__descr-container__value__without-promocode">
+                            Итого <br/>
+                            <span>2 100 р</span>
+                        </p>
+                        <p class="cart-container__descr-container__value__with-promocode">
+                            С учетом скидки<br/>
+                            <span>2 100 р</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="cart-container__btn-container">
+                    <button class="cart-container__btn-container__order">Оформить заказ</button>
+                    <button class="cart-container__btn-container__continue">продолжить покупки</button>
+                </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
